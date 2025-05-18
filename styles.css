@@ -1,0 +1,229 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background: #1e1e2f;
+  color: #f1f1f1;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+h1, h4 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+h4 {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  margin: 0;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: left;
+ }
+ h4 + h4 {
+  top: 35px;
+  position: absolute;
+ }
+
+#addUserBtn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-bottom: 20px;
+  transition: 0.3s ease;
+}
+
+#addUserBtn:hover {
+  background-color: #218838;
+}
+
+#userList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.user-card {
+  background: #2c2c3e;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+  width: 270px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+}
+
+.user-card h3 {
+  margin: 10px 0 5px;
+  color: #ffffff;
+}
+
+.user-card p {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #555;
+  margin: 0 auto 10px;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.actions button {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #007bff;
+}
+
+.edit-btn:hover {
+  background-color: #0069d9;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background-color: #2b2b3c;
+  padding: 25px 30px;
+  border-radius: 12px;
+  width: 350px;
+  text-align: left;
+  position: relative;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.5);
+}
+
+.modal-content h2 {
+  color: #ffffff;
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #f1f1f1;
+}
+
+.modal-content input[type="text"],
+.modal-content input[type="number"],
+.modal-content input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: #3a3a4d;
+  color: white;
+  border: none;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.modal-content input[type="file"] {
+  padding: 6px;
+  background: #44445a;
+}
+
+.modal-content button[type="submit"] {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.modal-content button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+#preview {
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #666;
+}
+
+.close-button {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  color: #ffffff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.close-button:hover {
+  color: #f44336;
+}

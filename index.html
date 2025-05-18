@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LenSison Finals</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h4>Sison, Len Nathaniel M.</h4>
+  <h4>BSIT 3B-G1</h4>
+  <h1>Our Team</h1>
+  <button id="addUserBtn">Add User</button>
+  <div id="userList"></div>
+
+  <!-- Modal for Add/Edit -->
+  <div id="userFormModal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-button" id="closeModal">&times;</span>
+      <h2 id="formTitle">Add User</h2>
+      <form id="userForm">
+        <input type="hidden" id="userId" />
+        <label>Name: <input type="text" id="name" required></label>
+        <label>Age: <input type="number" id="age" required></label>
+        <label>Address: <input type="text" id="address" required></label>
+        <label>Profession: <input type="text" id="profession" required></label>
+        <label>Hobbies: <input type="text" id="hobbies" required></label>
+        <label>Profile Picture: <input type="file" id="image" accept="image/*"></label>
+        <img id="preview" src="" style="width: 80px; height: 80px; border-radius: 50%; margin-top: 10px;" />
+        <button type="submit" id="submitBtn">Save</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

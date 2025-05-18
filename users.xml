@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user>
+    <id>1</id>
+    <name>Len Sison</name>
+    <age>21</age>
+    <address>Bustos, Bulacan</address>
+    <profession>Data Analyst</profession>
+    <hobbies>Watching Movies, Playing Online Games</hobbies>
+    <image>https://raw.githubusercontent.com/LenNathaniel/LenSison_FinalProj/main/pic1.jpg</image>
+</image>
+  </user>
+  <user>
+    <id>2</id>
+    <name>Marian Torres</name>
+    <age>22</age>
+    <address>Manila</address>
+    <profession>Doctor</profession>
+    <hobbies>Watching Movies, Playing Online Games</hobbies>
+    <image>https://raw.githubusercontent.com/LenNathaniel/LenSison_FinalProj/main/pic2.jpg</image>
+</image>
+  </user>
+</users>
