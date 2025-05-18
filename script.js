@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
           address: user.getElementsByTagName('address')[0].textContent,
           profession: user.getElementsByTagName('profession')[0].textContent,
           hobbies: user.getElementsByTagName('hobbies')[0].textContent,
-          image: user.getElementsByTagName('image')[0]?.textContent || ''
+          image: user.getElementsByTagName('image')[0]?.textContent.trim() || ''
          }));
 
   
