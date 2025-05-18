@@ -7,7 +7,7 @@
     <address>Bustos, Bulacan</address>
     <profession>Data Analyst</profession>
     <hobbies>Watching Movies, Playing Online Games</hobbies>
-    <image>https://github.com/LenNathaniel/LenSison_FinalProj/pic1.jpg</image>
+    <image>https://raw.githubusercontent.com/LenNathaniel/LenSison_BSIT3BG1_Finals/main/pic1.jpg</image>
   </user>
   <user>
     <id>2</id>
@@ -16,6 +16,6 @@
     <address>Manila</address>
     <profession>Doctor</profession>
     <hobbies>Watching Movies, Playing Online Games</hobbies>
-    <image>https://github.com/LenNathaniel/LenSison_FinalProj/pic2.jpg</image>
+    <image>https://raw.githubusercontent.com/LenNathaniel/LenSison_BSIT3BG1_Finals/main/pic2.jpg</image>
   </user>
 </users>
