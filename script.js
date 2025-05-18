@@ -84,16 +84,22 @@ document.addEventListener('DOMContentLoaded', () => {
       submitBtn.textContent = 'Save';
     }
 
-    document.getElementById('image').addEventListener('change', function () {
-      const file = this.files[0];
-      if (file) {
-        const reader = new FileReader();
-        reader.onload = () => {
-          document.getElementById('preview').src = reader.result;
-        };
-        reader.readAsDataURL(file);
-      }
-    });
+const imageInput = document.getElementById('image');
+
+imageInput.addEventListener('change', function () {
+  const file = this.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      document.getElementById('preview').src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  } else {
+    // If no file selected, fall back to image in preview (from XML)
+    document.getElementById('preview').src = userData.image || '';
+  }
+});
+
 
     userFormModal.classList.remove('hidden');
   }
