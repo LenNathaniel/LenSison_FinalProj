@@ -8,7 +8,6 @@
     <profession>Data Analyst</profession>
     <hobbies>Watching Movies, Playing Online Games</hobbies>
     <image>https://github.com/LenNathaniel/LenSison_FinalProj/pic1.jpg</image>
-</image>
   </user>
   <user>
     <id>2</id>
@@ -18,6 +17,5 @@
     <profession>Doctor</profession>
     <hobbies>Watching Movies, Playing Online Games</hobbies>
     <image>https://github.com/LenNathaniel/LenSison_FinalProj/pic2.jpg</image>
-</image>
   </user>
 </users>
